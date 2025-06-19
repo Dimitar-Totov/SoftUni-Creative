@@ -168,4 +168,42 @@ body>* {
     }
 }
 
+.career-development {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    padding: 3em;
+
+    .career-text {
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+            color: #545475;
+        }
+
+        p {
+            max-width: 95ch;
+            margin-bottom: 2em;
+        }
+
+        a {
+            max-width: 250px;
+            padding: 0.7em;
+            border: 1px solid #9B5DC6;
+            text-align: center;
+            text-decoration: none;
+            color: #9B5DC6;
+            font-weight: bold;
+            border-radius: 1.5em;
+
+            &:hover {
+                background-color: #b577dc;
+                color: #fff;
+                border: none;
+            }
+        }
+    }
+}
+
 }
