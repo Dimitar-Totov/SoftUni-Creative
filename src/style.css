@@ -206,4 +206,50 @@ body>* {
     }
 }
 
+.footer {
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    padding: 1em;
+    background-color: #2C2C3A;
+
+    &>* {
+        display: flex;
+        flex-direction: column;
+
+        h4 {
+            color: #9B5DC6;
+            margin: 1em 0;
+        }
+
+        a,
+        p {
+            color: #fff;
+            text-decoration: none;
+
+            &:not(:last-child) {
+                margin-bottom: 0.5em;
+            }
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .rights {
+        display: flex;
+        flex-direction: column;
+
+        .icons {
+            margin: 1em 0;
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+
+            & > * {
+                font-size: 1.5em;
+            }
+        }
+    }
 }
