@@ -119,4 +119,53 @@ body>* {
 
     }
 }
+
+.diplomas {
+    display: flex;
+    justify-content: space-between;
+    padding: 3em 5em;
+
+    .diplomas-text {
+
+        h3 {
+            color: #545475;
+        }
+
+        .primary {
+            max-width: 90ch;
+            margin-bottom: 1em;
+        }
+
+        .info {
+            font-style: italic;
+            opacity: 0.6;
+            margin: 0.5em 0;
+        }
+    }
+
+}
+
+.certificates {
+    display: flex;
+    background-color: #14162B;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7em 5em;
+    position: relative;
+
+    .certificates-text {
+        color: #fff;
+
+        p {
+            max-width: 100ch;
+        }
+    }
+
+    .certificates-media {
+        position: absolute;
+        right: 7em;
+        top: 6em;
+    }
+}
+
 }
