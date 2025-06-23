@@ -99,7 +99,7 @@ body>* {
                 }
             }
 
-            &:last-of-type>*::after{
+            &:last-of-type>*::after {
                 display: none;
             }
         }
@@ -247,8 +247,124 @@ body>* {
             align-items: start;
             justify-content: space-between;
 
-            & > * {
+            &>* {
                 font-size: 1.5em;
+            }
+        }
+    }
+}
+
+@media (width <=768px) {
+    .navigation {
+        align-items: center;
+
+        ul {
+            flex-wrap: wrap;
+            margin: 0;
+
+            li {
+                width: 100%;
+                text-align: center;
+                padding: 0.5em 1em;
+            }
+        }
+
+        .title-logo {
+            display: none;
+        }
+    }
+
+    .diplomas {
+        flex-wrap: wrap;
+        gap: 1em;
+
+        .diplomas-media {
+            margin: 0 auto;
+        }
+    }
+
+    .certificates {
+        flex-wrap: wrap;
+        gap: 1em;
+
+        .certificates-media {
+            position: static;
+        }
+
+        .certificates-text {
+            max-width: 90ch;
+        }
+    }
+
+    .career-development {
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+
+        .career-text {
+            a {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+
+        section:not(:last-of-type) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+@media (width<=1400px) {
+    .navigation {
+        ul {
+            justify-content: center;
+            margin: 0;
+            flex-grow: 1;
+        }
+
+        .title-logo {
+            display: none;
+        }
+    }
+
+    .diplomas {
+        flex-wrap: wrap;
+        gap: 1em;
+        justify-content: center;
+
+        .diplomas-media {
+            margin: 0 auto;
+        }
+    }
+
+    .certificates {
+        padding: 4em;
+        flex-wrap: wrap;
+        gap: 1.5em;
+        justify-content: center;
+
+        .certificates-media {
+            position: static;
+        }
+
+        .certificates-text {
+            max-width: 90ch;
+        }
+    }
+
+    .career-development {
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+
+        .career-text {
+            a {
+                margin: 0 auto;
             }
         }
     }
